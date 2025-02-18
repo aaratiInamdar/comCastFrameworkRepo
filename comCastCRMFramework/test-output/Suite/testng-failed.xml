@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.CRM.Practice.Classes.PracticeForTestNGSampleClass">
+        <methods>
+          <include name="sampleMrthod5"/>
+          <include name="ConfigBeforeMethod"/>
+          <include name="sampleMrthod6"/>
+          <include name="ConfigBeforeClass"/>
+          <include name="ConfigAfterMethod"/>
+          <include name="ConfigAfterClass"/>
+        </methods>
+      </class> <!-- com.CRM.Practice.Classes.PracticeForTestNGSampleClass -->
+      <class name="com.CRM.Practice.Classes.PracticeForTestNG">
+        <methods>
+          <include name="ConfigBeforeMethod"/>
+          <include name="ConfigBeforeClass"/>
+          <include name="ConfigAfterMethod"/>
+          <include name="sampleMrthod3"/>
+          <include name="sampleMrthod2"/>
+          <include name="ConfigAfterClass"/>
+        </methods>
+      </class> <!-- com.CRM.Practice.Classes.PracticeForTestNG -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
